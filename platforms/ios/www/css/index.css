@@ -1,0 +1,187 @@
+*{
+   box-sizing: border-box;
+}
+#timer{
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:150px;
+	height:150px;
+	margin-left:-75px;
+	margin-top:-75px;
+	z-index:200;
+}
+div#helpTxtWrapper{
+	position:absolute;
+   top:0;
+   width:100%;
+   max-width:576px;
+	z-index:100;
+   background-color:rgba(245,245,255,0.85);
+   padding:5%;
+}
+#helpClose{
+   width:5%;
+   height:5%;
+   display:block;
+   position:relative;
+   top:0;
+}
+#helpClose img{
+   width:5vh;
+   height:5vh;
+}
+html,body,div#app{
+   width:100%;
+   height:100%;
+   padding:0;
+   margin:0;
+   font-family:sans-serif;
+   color:rgb(66,66,66);
+   box-sizing:border-box;
+   font-size:1em;
+}
+body{
+   -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+   -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+   -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+   background-color:rgb(0,0,0);
+}
+div#app{
+   max-width:640px;
+   min-width:320px;
+   margin:auto;
+   display:flex;
+   flex-direction:column;
+   justify-content:space-between;
+   margin:auto;
+   align-items:center;
+	background:transparent url(../img/fond-planete.jpg) repeat-y center center;
+	background-size:cover;
+}
+div#header{
+   width:100%;
+   text-align:right;
+}
+div#help a{
+   display:inline-block;
+   width:2em;
+   height:2em;
+   line-height:2em;
+   border:thin solid rgba(245,245,255,0.9);
+   border-radius:1em;
+   color:rgba(245,245,255,0.9);
+   text-decoration:none;
+   text-align:center;
+   margin:0.2em;
+}
+
+div#container div{
+   display:flex;
+   flex-direction:row;
+   justify-content:flex-end;
+   align-items:center;
+   height:2em;
+   margin:0.5em 0;
+}
+
+#inputWrapper {
+	width:100%;
+	padding:1em;
+	border:none;
+	border-radius:0;
+	margin:0;
+	background-color:rgba(245,245,255,0.9);
+	resize: none;
+   text-align:center;
+}
+#input{
+   text-align:left;
+}
+#translations{
+/*   overflow-y:scroll;*/
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+/*   width:70%;*/
+}
+#outputWrapper{
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+	width:100%;
+}
+button {
+   background-color:rgb(66,66,66);
+   color:rgba(245,245,255,0.9);
+   width:1.5em;
+   height:1.5em;
+   line-height:1em;
+   border-radius:1em;
+   margin-top:0.3em;
+   font-size:2em;
+   border:none;
+   cursor:pointer;
+}
+
+#outputInnerWrapper{
+	width:100%;
+   padding:1em;
+	background-color:rgba(245,245,255,0.9);
+}
+#output{
+	width:100%;
+}
+#poweredby{
+   height:2em;
+   line-height:2em;
+   font-size:0.7em;
+   font-style:italic;
+   font-weight:100;
+   color:rgba(245,245,255,0.9);
+}
+#poweredby a{
+   text-decoration:none;   
+   color:rgba(245,245,255,0.9);
+}
+
+.moins{
+	text-align:center;	
+	height:2em;
+	width:2em;
+	cursor:pointer;
+	background-color:rgba(255,255,255,0.6);
+	color:rgb(28,87,125);
+	border-radius:1em 0 0 1em;
+   display: flex;
+   align-items: center;
+}
+.moins img {
+	width:1em;
+	height:1em;
+   margin:auto;
+}
+#more .moins{
+	border-radius:1em;
+}
+select {
+   font-size:1em;
+	border-radius:0 1em 1em 0;
+	height:2em;
+	background-color:rgba(255,255,255,0.6);
+	color:rgb(28,87,125);
+	border:none;
+	outline:none;
+	display: inline-block;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	cursor:pointer;
+	width:100%;
+}
+select.hidden {
+	background-color:transparent;
+	color:transparent;
+}
+

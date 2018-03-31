@@ -1,0 +1,37 @@
+  <html>
+	<head>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com https://translate.yandex.com/ 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:; connect-src 'unsafe-inline' https://translate.yandex.net/api/v1.5/tr.json/getLangs https://translate.yandex.net/api/v1.5/tr.json/translate; script-src 'unsafe-inline' ;"> -->
+		<meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
+	</head>
+	<body>
+		<div id="app">
+         <div id="header">
+           <div id="inputWrapper">
+             <div id="input"></div>
+           </div>
+             <div id="help"><a id="helpButton" href="javascript:void(0);">?</a></div>
+         </div>
+         <div id="translations">
+   				<div id="container"></div>
+   			</div>
+         <div id="outputWrapper">
+           <div id="outputInnerWrapper">
+             <output id="output"></output>
+           </div>
+   			  <div id="poweredby"><a href="http://translate.yandex.com/">Powered by Yandex.Translate</a> - Designed by 8ctambules &copy;</div>
+         </div>
+         <div id="helpTxtWrapper" style="display:none">
+           <a id="helpClose" href="javascript:void(0);"><img src="img/delete.png" /></a>
+           <div id="helpTxt"></div>
+         </div>
+		</div>
+		<img id="timer" src="img/timer.gif" />
+      <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/utils.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
